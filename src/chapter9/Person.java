@@ -5,6 +5,14 @@ public class Person {
     private int age;
     private  String gender;
 
+    public Person(){
+        System.out.println("Person default constructor");
+    }
+
+    public Person(String name){
+        System.out.println("Person 2nd constructor. Name is set.");
+    }
+
     public String getName() {
         return name;
     }
