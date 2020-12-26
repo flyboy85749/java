@@ -10,7 +10,8 @@ import java.util.Scanner;
 public class ExceptionHandling {
     public static void main(String[] args) {
 //        createNewFile();
-        numbersExceptionHandling();
+//        numbersExceptionHandling();
+//        createNewFileRethrow()
     }
 
     public static void createNewFile() {
@@ -22,6 +23,13 @@ public class ExceptionHandling {
             e.printStackTrace();
         }
     }
+
+    public static void createNewFileRethrow() throws IOException{
+        File file = new File("resources/nonexistent.txt");
+
+            file.createNewFile();
+        }
+
 
     public static void numbersExceptionHandling() {
         File file = new File("resources/numbers.txt");
